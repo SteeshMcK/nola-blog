@@ -9,7 +9,6 @@ const useFetch = (url) => {
         //1. An Abort Controller
         const abortCont = new AbortController()
 
-        setTimeout(() => {
             //2. Associating the abortController with a specific fetch request
             fetch(url, { signal: abortCont.signal})
                 .then(res => {
@@ -32,7 +31,6 @@ const useFetch = (url) => {
                         setError(err.message)
                     }
                 })
-        }, 1000)
         //3. Cleanup function. Aborts whatever fetch it is associated with.
         return () => abortCont.abort()
     }, [url])
