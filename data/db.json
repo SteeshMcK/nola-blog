@@ -2,13 +2,13 @@
     "blogs": [
         {
             "title": "I wish I was in New Orleans",
-            "body": "Well, I wish I was in New Orleans, I can see it in my dreams, Arm-in-arm down Burgundy, a bottle and my friends and me",
+            "body": "Well, I wish I was in New Orleans. I can see it in my dreams. Arm-in-arm down Burgundy, a bottle and my friends and me.",
             "author": "Tom",
             "id": 1
         },
         {
             "title": "Sweet Home New Orleans",
-            "body": "Sweet Home New Orleans. I can sure 'nuff hear you calling. Feel that gentle rain be falling. Say 'Where y'at my darling.",
+            "body": "Sweet Home New Orleans. I can sure 'nuff hear you calling. Feel that gentle rain be falling. Say 'Where y'at, my darling'.",
             "author": "Dr. John",
             "id": 2
         },
