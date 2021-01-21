@@ -5,11 +5,29 @@ const Create = () => {
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
     const [author, setAuthor] = useState('Tom')
+    const [isLoading, setIsLoading] = useState(false)
+
+    const handleSubmit =(e) => {
+        e.preventDefault()
+        const blog = { title, body, author }
+
+        setIsLoading(true)
+
+        fetch('http://localhost:8000/blogs', {
+            method: 'POST',
+            headers: { 'Content-Type' : 'application/json' },
+            body: JSON.stringify(blog)
+        }).then(() => {
+            console.log('new blog added')
+            setIsLoading(false)
+        })  
+        console.log(blog)
+    }
 
     return ( 
         <div className='create'>
             <h2>Tell Me Somethin', Mistah!</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <label>Blog title:</label>
                 <input
                     type='text'
@@ -32,7 +50,8 @@ const Create = () => {
                     <option value='Dr. John'>Dr. John</option>
                     <option value='Queen LaStesha'>Queen LaStesha</option>
                 </select>
-                <button>Add Blog</button>
+                {/* Ternary operators are COOL! */}
+                { !isLoading ? <button>Add Blog</button> : <button disabled>Adding Blog...</button> }
             </form>
         </div>
      );
