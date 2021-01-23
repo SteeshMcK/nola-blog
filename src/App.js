@@ -1,9 +1,10 @@
-import './App.css'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Create from './components/Create/Create'
 import BlogDetails from './components/BlogDetails/BlogDetails'
+import NotFound from './components/NotFound/NotFound'
+import './App.css'
 
 function App() {
   
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route path='/blogs/:id'>
               <BlogDetails />
+            </Route>
+            <Route path='*'>
+              <NotFound />
             </Route>
           </Switch>
         </div>
