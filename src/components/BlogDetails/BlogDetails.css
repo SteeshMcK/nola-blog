@@ -1,20 +1,21 @@
 .blog-details h2 {
-    font-size: 20px;
+    font-size: 25px;
     color: #066022;
     margin-bottom: 10px;
 }
 
 .blog-details div {
     margin: 20px 0;
+    font-size: 20px;
 }
 
 .blog-details button {
-    background: #ffffe0;
-    color: #880085;
-    border: 1px outset #f4f400;
+    background: #880085;
+    color: #ffffe0;
+    border: .5px outset #4d004b;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
 }
