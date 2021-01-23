@@ -8,11 +8,13 @@
     margin: 20px 0;
 }
 
-/* .blog-details button {
+.blog-details button {
     background: #ffffe0;
-    color: #066022;
-    border: 0;
-    padding: 8px;
+    color: #880085;
+    border: 1px outset #f4f400;
+    padding: 10px;
     border-radius: 8px;
     cursor: pointer;
-} */
+    font-size: 15px;
+    font-weight: bold;
+}
